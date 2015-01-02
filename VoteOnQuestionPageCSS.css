@@ -1,0 +1,149 @@
+/* first cell of the row containing the current vote for the question*/
+*[id^='voteResult']{
+  min-width:30px;
+  max-width:30px;
+  text-align:center;
+}
+
+/* div that holds the table for voting and previewing questions*/
+#tableQuestionsVote{
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:50px;
+     margin-bottom:50px;
+     width:auto; 
+ }
+
+/* the div that holds the table for voting and previewing and the button MoreQuestions*/
+#voteAndMoreQuestions{
+     width:800px;
+     margin-left:auto;
+     margin-right:auto;      
+}
+ 
+/* the table for vote and preview questions*/
+#questionsTable{
+     margin-left:auto;
+     margin-right:auto;
+     margin-bottom:30px;
+     margin-top:45px;
+     background-color:#daf3ff;
+     height: auto;
+     width:auto;
+     margin-left:auto;
+     margin-right:auto;
+     -moz-box-shadow: 0 5px 10px 3px #505050;
+     -webkit-box-shadow: 0 5px 10px 3px #505050;
+     box-shadow: 0 5px 10px 3px #6a6a6a;
+     border-radius:5px;
+     -moz-border-radius:15px;
+  
+}
+
+#questions th{
+font-size:1.2em;
+font-family:Arial, serif;
+background-color:#66ccff;
+text-align:left;
+}
+
+tr{
+     boder-radius:8px;
+}
+/* VOTE button*/
+#voteButton{
+     width:50px;
+}
+
+/* the cell that holds the button VOTE*/
+*[id^='voteButtonCell']{
+     max-width:50px;
+
+}
+
+#moreQuestions{
+     align:right;
+}
+#questions
+{
+font-family: Arial, serif;
+width:100%;
+border-collapse:collapse;
+}
+#questions td
+{
+font-size:1.2em;
+/*min-width:30px; */
+max-width:500px;
+padding:3px 7px 2px 7px;
+}
+
+#questions tr.alt td 
+{
+padding-top:9px;
+padding-bottom:9px;
+color:#000000;
+background-color:#daf3ff;
+}
+/* the cell that holds actual question */
+*[id^='questionCell']{
+     padding-left:5px;
+     padding-right:3px;
+     max-width: 500px; 
+     min-width:400px;   
+     font-size:24px;
+}
+
+/* the button see more '>' */
+#buttonSeeMore{
+     width:50px;
+     max-width:100px;
+}
+*[id^='questionType']{
+     max-width:50px; 
+     text-align:center;  
+}
+
+/* the cell that holds the button SeeMore */
+*[id^='seeMoreCell']{
+     max-width:50px;   
+}
+
+ /* the text "vote for question" */
+ #DivVoteForQuestion{
+     width:300px;
+     margin-left:auto;
+     margin-right:auto;
+     padding-top:5px;
+     margin-top:40px;
+     font-size:25px;
+ }
+ 
+ #moreQuestions{
+     width:150px;
+     height:35px;
+     margin: 0 auto;
+     font-size:15px;     
+ }
+ #centeredMoreQuestionsButton{
+  width:150px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+/* next bits are used in the tab version of voting questions, ignore them if want to use table */
+ *[id^='preview']{
+     background-color:white;
+ } 
+#question1{
+     max-width:100px;
+
+ #buttonSeeMoreQuestionsISCentered{
+margin: 0 auto;
+width:160px;
+
+}
+ }
+

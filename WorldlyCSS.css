@@ -1,0 +1,745 @@
+ body {
+      background-color:#66CCFF;
+      margin:0;
+  }
+  /*Menu Body*/
+  ul#menu {
+      width:100%;
+      height:100px;
+      background:url(bg.png) repeat-x scroll;
+      list-style:none;
+      margin:0;
+      padding:0;
+      padding-top:10px;
+  }
+  /*Float elements to the left for horizontal display*/
+  ul#menu li {
+      float:left;
+  }
+  /*Link common attributes*/
+  ul#menu li a {
+      display:block;
+      height:65px;
+      position:relative;
+  }
+  /*Class 'home'*/
+  .home {
+      background:url(HomeSprite.png) no-repeat scroll top;
+      width:127px;
+  }
+  /*hover for home*/
+  .home:hover, .homeActive {
+      background:url(HomeSprite.png) no-repeat scroll bottom;
+      background-position:0px -67px;
+      width:127px;
+  }
+  /*Class 'questions'*/
+  .questions {
+      background:url(QuestionsSprite.png) no-repeat scroll top;
+      width:127px;
+  }
+  /*hover for questions*/
+  .questions:hover, .questionsActive {
+      background:url(QuestionsSprite.png) no-repeat scroll bottom;
+      background-position:0px -67px;
+      width:127px;
+  }
+  /*Class 'history'*/
+  .history {
+      background:url(HistorySprite.png) no-repeat scroll top;
+      width:127px;
+  }
+  /*hover for history*/
+  .history:hover, .historyActive {
+      background:url(HistorySprite.png) no-repeat scroll bottom;
+      background-position:0px -67px;
+      width:127px;
+  }
+  /*Class 'account'*/
+  .account {
+      background:url(AccountSprite.png) no-repeat scroll top;
+      width:127px;
+  }
+  /*hover for account*/
+  .account:hover, .accountActive {
+      background:url(AccountSprite.png) no-repeat scroll bottom;
+      background-position:0px -67px;
+      width:127px;
+  }
+  /*Span (on hover) common attributes*/
+  ul#menu li a span {
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      z-index:100;
+  }
+  /*The information for the logo on the menu bar*/
+  .logo {
+      background:url(WorldlyLogo2.png) no-repeat scroll;
+      height:65px;
+      width:210px;
+      padding-top:8px;
+  }
+  /*The white space to push account over to the right*/
+  .restOfBar {
+      width:282px;
+  }
+  /*Span display pointer*/
+  ul#menu li a span:hover {
+      cursor:pointer;
+  }
+  .loginLink {
+      float:right;
+      width:1150px;
+  }
+  /*The white space for the website content*/
+  *[id^='whiteSpace'] {
+      -moz-box-shadow: 0 5px 10px 3px #6497B0;
+      -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+      box-shadow: 0 5px 10px 3px #6497B0;
+      border-radius:5px;
+      -moz-border-radius:15px;
+      background-color: #F5F5F5;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom: 20px;
+      padding-bottom:30px;
+      height:auto;
+      width:1000px;
+      font-family:Arial, serif;
+  }
+  /*The contents container for the menu elements - width should be set to
+    same as the white space above*/
+  #contents1 {
+      width:1000px;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  /* ----------------------------------------------------------------- HOME PAGE CSS--------- */
+  /* div for the fast links*/
+  #fastLinks {
+      width:1000px;
+      margin-right:auto;
+      margin-left:auto;
+      margin-top:40px;
+  }
+  /* area that holds the text box for ask question and the button*/
+  *[id^='AskArea'] {
+      -moz-box-shadow: 0 5px 10px 3px #6497B0;
+      -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+      box-shadow: 0 5px 10px 3px #6497B0;
+      border-radius:5px;
+      -moz-border-radius:15px;
+      background-color: #F5F5F5;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom: 20px;
+      height:auto;
+      width:1000px;
+      padding-bottom:none;
+  }
+  #AskAreaFAQ{
+    padding-bottom:25px;
+}
+  /*div for the text for questions */
+  *[id^='questionTitle'] {
+      text-align:center;
+      font-size:30px;
+      font-family:Arial, serif;
+      padding-bottom:20px;
+      padding-top:20px;
+      height:auto;
+  }
+  .loginLink {
+      text-align:left;
+      font-family:Arial, serif;
+      margin-top:15px;
+      height:40px;
+      width:1000px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  /*buttons on the top of the pages*/
+  #aboutUsFAQTab {
+      margin-left:auto;
+      margin-right:auto;
+      width:1000px;
+  }
+  /* table that contains text field and button for ASK question */
+  #askMe {
+      padding-bottom:5px;
+      padding-top:5px;
+      margin-left:155px;
+      margin-right:155px;
+  }
+  /* text box for ask questions */
+  #question {
+      width:500px;
+      height:35px;
+      border-radius: 3px;
+      font-family:Arial, serif;
+  }
+  /* the button "ASK!" */
+  #loginButton {
+      width:110px;
+      height:30px;
+      font-family:Arial, serif;
+  }
+   /* div for the answer buttons */
+  #answerButtons {
+      height:400px;
+      width:1000px;
+  }
+  /* the table for buttons (answers) */
+  #buttonsTable {
+      padding-top:40px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  #buttonsRows {
+      border-collapse: collapse;
+  }
+  td {
+      padding-top:5px;
+      color:#505050;
+      font-family:Arial, serif;
+  }
+   
+  #holdAnswers{
+   width:1000px;
+   height:50px;
+   /*background-color:yellow;*/
+   margin-left:auto;
+   margin-right:auto;
+
+}
+*[id^='holdAllAnswers']{
+   margin-top:40px;
+   margin-bottom:30px;
+   margin-left:auto;
+   margin-right:auto;
+  /* background-color:red;*/
+}
+  /* next bits are for the different answer buttons */
+  *[id^='answer1question'], *[id^='answer2question'], *[id^='answer3question'], *[id^='answer4question'], *[id^='answer5question'], *[id^='answer6question'] {
+      border-style:solid;
+      border-width:3px;
+      background-color:white;
+      width:147px;
+      height:40px;
+      border-radius: 8px;
+      font-family:Arial, serif;
+  }
+  *[id^='answer1question'] {
+      border-color:#FF6666;
+  }
+  *[id^='answer1question']:hover {
+      background:#FF8080;
+  }
+  *[id^='answer2question'] {
+      border-color:#00FF00;
+  }
+  *[id^='answer2question']:hover {
+      background:#99FF99;
+  }
+  *[id^='answer3question'] {
+      border-color:#FFFF00;
+  }
+  *[id^='answer3question']:hover {
+      background:#FFFF99;
+  }
+  *[id^='answer4question'] {
+      border-color:#FF00CC;
+  }
+  *[id^='answer4question']:hover {
+      background:#FF66FF;
+  }
+  *[id^='answer5question'] {
+      border-color:#00CCFF;
+  }
+  *[id^='answer5question']:hover {
+      background:#99FFFF;
+  }
+  *[id^='answer6question'] {
+      border-color:#9966CC;
+  }
+  *[id^='answer6question']:hover {
+      background:#CC99FF;
+  }
+  #questionText {
+      margin-left:auto;
+      margin-right:auto;
+      font-family:Arial, serif;
+  }
+  /*--------------------BUTTONS------------------------------*/
+  .SpecialButtons {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafaff), color-stop(1, #d3dce0));
+      background:-moz-linear-gradient(center top, #fafaff 5%, #d3dce0 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafaff', endColorstr='#d3dce0');
+      background-color:#fafaff;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      border-radius:4px;
+      border:1px solid #c9ced1;
+      display:inline-block;
+      color:#706970;
+      font-family:Arial;
+      font-size:20px;
+      font-weight:bold;
+      padding:5px 35px;
+      text-decoration:none;
+      text-shadow:0px 0px 0px #918691;
+  }
+  .SpecialButtons:hover {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d3dce0), color-stop(1, #fafaff));
+      background:-moz-linear-gradient(center top, #d3dce0 5%, #fafaff 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3dce0', endColorstr='#fafaff');
+      background-color:#d3dce0;
+  }
+  .SpecialButtons:active {
+      position:relative;
+      top:1px;
+  }
+  /* This imageless css button was generated by CSSButtonGenerator.com */
+  .tabButtons {
+      -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #f7f7f7));
+      background:-moz-linear-gradient(center top, #cccccc 5%, #f7f7f7 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#f7f7f7');
+      background-color:#cccccc;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+      border-radius:3px;
+      border:1px solid #dcdcdc;
+      display:inline-block;
+      color:#6b6b6b;
+      font-family:Arial;
+      font-size:20px;
+      font-weight:bold;
+      padding:5px 15px;
+      text-decoration:none;
+      text-shadow:1px 1px 0px #ffffff;
+  }
+  .tabButtons:hover {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f7f7f7), color-stop(1, #cccccc));
+      background:-moz-linear-gradient(center top, #f7f7f7 5%, #cccccc 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#cccccc');
+      background-color:#f7f7f7;
+  }
+  .tabButtons:active {
+      position:relative;
+      top:1px;
+  }
+  /* This imageless css button was generated by CSSButtonGenerator.com */
+  .tabButtonsMain {
+      -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #f4f4f4));
+      background:-moz-linear-gradient(center top, #cccccc 5%, #f4f4f4 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#f4f4f4');
+      background-color:#cccccc;
+      -moz-border-radius:6px;
+      -webkit-border-radius:6px;
+      border-radius:4px;
+      border:1px solid #dcdcdc;
+      display:inline-block;
+      color:#635e63;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:5px 10px;
+      text-decoration:none;
+      text-shadow:1px 1px 0px #ffffff;
+  }
+  .tabButtonsMain:hover {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f4f4f4), color-stop(1, #cccccc));
+      background:-moz-linear-gradient(center top, #f4f4f4 5%, #cccccc 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#cccccc');
+      background-color:#f4f4f4;
+  }
+  .tabButtonsMain:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .deleteB {
+ -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f58291), color-stop(1, #f2e9f2) );
+	background:-moz-linear-gradient( center top, #f58291 5%, #f2e9f2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58291', endColorstr='#f2e9f2');
+	background-color:#f58291;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #f7d7dd;
+	display:inline-block;
+	color:#505050;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #fcedfc;
+}.deleteB:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2e9f2), color-stop(1, #f58291) );
+	background:-moz-linear-gradient( center top, #f2e9f2 5%, #f58291 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2e9f2', endColorstr='#f58291');
+	background-color:#f2e9f2;
+}.deleteB:active {
+	position:relative;
+	top:1px;
+}
+  /* This imageless css buttons were generated by CSSButtonGenerator.com */
+  /* ------------------------------------------------------ACCOUNT PAGE CSS --- LORA */
+  .container {
+      margin-left:auto;
+      margin-right:auto;
+      width:1000px;
+      font-family:Arial, serif;
+  }
+  /* login and registration forms*/
+  .login, .register {
+      margin-right:20px;
+      color:#505050;
+      padding: 10px 20px 20px;
+      width: 250px;
+      float:left;
+      background:#F5F5F5;
+      -moz-box-shadow: 0 5px 10px 3px #6497B0;
+      -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+      box-shadow: 0 5px 10px 3px #6497B0;
+      border-radius:5px;
+      -moz-border-radius:15px;
+  }
+  #onlyOnRegister{
+      text-align:center;
+      background-color:#F5F5F5;
+      width:540px; 
+      margin: 0 auto;
+      -moz-box-shadow: 0 5px 10px 3px #6497B0;
+      -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+      box-shadow: 0 5px 10px 3px #6497B0;
+      border-radius:5px;
+      -moz-border-radius:15px;
+  }
+  .accountDetailsDiv {
+      padding: 10px 20px 20px;
+      background-color:#F5F5F5;
+      -moz-box-shadow: 0 5px 10px 3px #6497B0;
+      -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+      box-shadow: 0 5px 10px 3px #6497B0;
+      border-radius:5px;
+      -moz-border-radius:15px;
+      width:500px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  #detailsText {
+      text-align:center;
+      font-size:30px;
+      color:#505050;
+      font-family:Arial, serif;
+  }
+  #userDetails {
+      width:400px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  p.submit {
+      text-align: right;
+  }
+}
+/* the password and username text before in unactive state*/
+ :-moz-placeholder {
+    color: #c9c9c9 !important;
+    font-size: 13px;
+}
+input[type=text], input[type=password] {
+    margin: 5px;
+    padding: 0 10px;
+    width: 200px;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    -moz-outline-radius: 3px;
+    &:focus {
+        border-color: #7dc9e2;
+        outline-color: #dceefc;
+    }
+}
+.lt-ie9 {
+    input[type=text], input[type=password] {
+        line-height: 34px;
+    }
+}
+#registerText, #loginText {
+    font-family:Arial, serif;
+    text-align:center;
+    font-size:25px;
+    color:#505050;
+}
+/* the area for log in details, div */
+ #login {
+    padding-bottom:10%;
+}
+/* text that is heading for your details section */
+ #yourAccountHeading {
+    text-align:center;
+    padding-top:7%;
+    font-size:35px;
+    font-family:Arial, serif;
+    color:#505050;
+    height:auto;
+}
+#detailsArea {
+    margin-left:auto;
+    margin-right:auto;
+    height:500px;
+}
+/* field around the form boxes */
+ #fieldSet {
+    -webkit-border-radius: 8px;
+    -moz-box-shadow: 0 5px 10px 3px #6497B0;
+    -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+    box-shadow: 0 3px 5px 1px #6497B0;
+    border-radius:8px;
+    -moz-border-radius:8px;
+    width:auto;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    color:#505050;
+}
+/* fieldset of the registration form */
+ #fieldSet2 {
+    -webkit-border-radius: 8px;
+    -moz-box-shadow: 0 5px 10px 3px #6497B0;
+    -webkit-box-shadow: 0 5px 10px 3px #6497B0;
+    box-shadow: 0 3px 5px 1px #6497B0;
+    border-radius:8px;
+    -moz-border-radius:8px;
+    width:auto;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    color:#505050;
+}
+/* the text in registartion table is on one line */
+ td {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 125px;
+    height: 25px;
+}
+/* the footer */
+ #footer {
+    text-align:right;
+    height:10px;
+    padding-top:10px;
+    padding-bottom:5px;
+    margin-top:15px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    background-color:#66CCFF;
+    font-family:Arial, serif;
+}
+#formLog, #formReg {
+    background-color:#F5F5F5;
+}
+#detailsText {
+    font-size:26px;
+    text-align:center;
+}
+/*------------------------------------------------------------QUESTION PAGE----------------*/
+ #whiteSpace1 {
+    padding-bottom:20px;
+}
+/*div that holds the title of the page*/
+ #addNewQuestion {
+    width:auto;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5px;
+}
+/* text for the title of QUESTION page */
+ #textTitleForAddNew {
+    text-align:center;
+    font-size:30px;
+    color:#505050;
+    font-family:Arial, serif;
+}
+/* holds the new question and answers in QUESTION page*/
+ #divAddQuestion {
+    width:420px;
+    height:auto;    
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+/*background-color:yellow;*/
+}
+/* div for the question only, isn't in table, because the counter doesn't work */
+ #divUserQuestion {
+    white-space: nowrap;
+    font-size:23px;
+    color:#505050;
+    font-family: Arial, serif;
+}
+/*the textfield where the user enter the question*/
+ #userQuestion {
+    width:300px;
+    height:35px;
+    border-radius: 3px;
+    font-family:Arial, serif;
+}
+/* the button Add Answer */
+ #addAnswerButton, #deleteAnswerButton {
+    font-family:Arial, serif;
+}
+/* the button Submit Question */
+ #userSubmitNewQuestion {
+    margin-left:130px;
+    margin-right:110px;
+    margin-top:20px;
+    margin-bottom:30px;
+    width:110px;
+    height:30px;
+    font-family:Arial, serif;
+}
+#addAnswerTable {
+    width:300px;
+    font-size:20px;
+    font-family:Arial, serif;
+    padding:5px 15px;
+}
+/* ----------------------------------------------------------HISTORY PAGE CSS ------ PEDRO */
+
+/*div that holds the droplists for from and type of questions*/
+ .historyFieldFromTypeTable {
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+    height:60px;  
+  /*background-color:green;*/
+}
+#searchTable {
+    width:210px;
+    font-size:20px;
+    font-family:Arial, serif;
+    padding:10px 15px;
+    margin-right:auto;
+    margin-left:auto;
+/*background-color:red;*/
+}
+/* From */
+ .fromANDtype { 
+    margin-left:auto;
+    margin-right:auto;
+    color:#505050;  
+    font-family:Arial, serif;
+}
+ .fromANDtype
+        {
+            color:#505050;
+            text-align:center;
+            width:110px;
+            height:33px;
+            font-size:16px;
+        }
+
+       .fromANDtype option
+        {
+            text-align:left;
+            background:#f5f5f5 ;
+        }
+    #divButtonSearch{
+   margin-left:auto;
+   margin-right:auto;
+   width:110px;
+   /*background-color:blue;*/
+}   
+  #searchButton{
+    margin-top:30px;
+    margin-bottom:30px;
+    width:110px;
+    height:30px;
+    font-family:Arial, serif;
+}
+/* --------------------------------------------------------------------------MAP */
+ *[id^='map'] {
+    height: 600px;
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    -moz-box-shadow: 0 5px 10px 3px #505050;
+    -webkit-box-shadow: 0 5px 10px 3px #505050;
+    box-shadow: 0 5px 10px 3px #6a6a6a;
+    border-radius:5px;
+    -moz-border-radius:15px;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+    text-align: right;
+}
+.results {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: right;
+}
+.results h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+/*================================================================================================================*/
+
+/*-------------------------------------------VIEW.PHP--------------------------*/
+
+/*div for the text for questions */
+ #questionTitle {
+    text-align:center;
+    font-size:30px;
+    font-family:Arial, serif;
+    padding-bottom:20px;
+    padding-top:20px;
+    height:auto;
+}
+
+ /* Vote Button */
+ #Vote{
+    text-align:center;
+    padding-top:50px;
+  }
+  
+  /* Facebook Share Button */
+  #fb_share{
+    float:right; 
+    margin-right:10px;
+    padding-top:10px;
+   }
